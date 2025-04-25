@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BPB Panel</title>
+    <title>BPB 面板</title>
     <link rel="icon" href="/favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet"
@@ -14,11 +14,11 @@
 
 <body>
     <h1>
-        BPB Panel <span id="panel-version" style="font-size: smaller;">v__PANEL_VERSION__</span> <img class="icon"
+        BPB 面板 <span id="panel-version" style="font-size: smaller;">v__PANEL_VERSION__</span> <img class="icon"
             src="/favicon.ico" alt="BPB Logo">
     </h1>
     <div class="form-container container">
-        <h2><span class="material-symbols-outlined">settings</span> Settings</h2>
+        <h2><span class="material-symbols-outlined">settings</span> 设置</h2>
         <form id="configForm" class="configForm">
             <details class="details">
                 <summary>
@@ -26,53 +26,53 @@
                 </summary>
                 <div class="section">
                     <div class="form-control">
-                        <label for="remoteDNS">🌏 Remote DNS</label>
+                        <label for="remoteDNS">🌏 远程 DNS</label>
                         <div>
                             <input type="url" id="remoteDNS" name="remoteDNS" required>
                         </div>
                     </div>
                     <div class="form-control">
-                        <label for="localDNS">🏚️ Local DNS</label>
+                        <label for="localDNS">🏚️ 本地 DNS</label>
                         <div>
                             <input type="text" id="localDNS" name="localDNS"
                                 pattern="^(localhost|(?:\d{1,3}\.){3}\d{1,3})$"
-                                title="Please enter a valid DNS IP Address!" required>
+                                title="请输入有效的 DNS IP 地址！" required>
                         </div>
                     </div>
                     <div class="form-control">
                         <label for="VLTRFakeDNS">🧢 Fake DNS</label>
                         <div>
                             <select id="VLTRFakeDNS" name="VLTRFakeDNS">
-                                <option value="true">Enabled</option>
-                                <option value="false">Disabled</option>
+                                <option value="true">启用</option>
+                                <option value="false">禁用</option>
                             </select>
                         </div>
                     </div>
                     <div class="form-control">
-                        <label for="proxyIPs">📍 Proxy IPs / Domains</label>
+                        <label for="proxyIPs">📍 代理 IP / 域名</label>
                         <div>
                             <textarea type="text" id="proxyIPs" name="proxyIPs" rows="1"></textarea>
                         </div>
                     </div>
                     <div class="form-control">
-                        <label for="outProxy">✈️ Chain Proxy</label>
+                        <label for="outProxy">✈️ 链式代理</label>
                         <div>
                             <input type="text" id="outProxy" name="outProxy">
                         </div>
                     </div>
                     <div class="form-control">
-                        <label for="cleanIPs">✨ Clean IPs / Domains</label>
+                        <label for="cleanIPs">✨ 优选 IP / 域名</label>
                         <div>
                             <textarea type="text" id="cleanIPs" name="cleanIPs" rows="1"></textarea>
                         </div>
                     </div>
                     <div class="form-control">
-                        <label for="scanner">🔎 Clean IP Scanner</label>
+                        <label for="scanner">🔎 优选 IP 扫描器</label>
                         <div>
                             <a href="https://github.com/bia-pain-bache/Cloudflare-Clean-IP-Scanner/releases/tag/v2.2.5"
                                 name="scanner" target="_blank">
                                 <button type="button" id="scanner" class="button">
-                                    Download Scanner
+                                    下载扫描器
                                     <span class="material-symbols-outlined">open_in_new</span>
                                 </button>
                             </a>
@@ -82,37 +82,37 @@
                         <label for="VLTRenableIPv6">🔛 IPv6</label>
                         <div>
                             <select id="VLTRenableIPv6" name="VLTRenableIPv6">
-                                <option value="true">Enabled</option>
-                                <option value="false">Disabled</option>
+                                <option value="true">启用</option>
+                                <option value="false">禁用</option>
                             </select>
                         </div>
                     </div>
                     <div class="form-control">
-                        <label for="customCdnAddrs">💀 Custom CDN Addrs</label>
+                        <label for="customCdnAddrs">💀 自定义 CDN 地址</label>
                         <div>
                             <textarea type="text" id="customCdnAddrs" name="customCdnAddrs" rows="1"></textarea>
                         </div>
                     </div>
                     <div class="form-control">
-                        <label for="customCdnHost">💀 Custom CDN Host</label>
+                        <label for="customCdnHost">💀 自定义 CDN Host</label>
                         <div>
                             <input type="text" id="customCdnHost" name="customCdnHost">
                         </div>
                     </div>
                     <div class="form-control">
-                        <label for="customCdnSni">💀 Custom CDN SNI</label>
+                        <label for="customCdnSni">💀 自定义 CDN SNI</label>
                         <div>
                             <input type="text" id="customCdnSni" name="customCdnSni">
                         </div>
                     </div>
                     <div class="form-control">
-                        <label for="bestVLTRInterval">🔄 Best Interval</label>
+                        <label for="bestVLTRInterval">🔄 测试最佳间隔</label>
                         <div>
                             <input type="number" id="bestVLTRInterval" name="bestVLTRInterval" min="10" max="90">
                         </div>
                     </div>
                     <div class="form-control">
-                        <label for="VLConfigs">⚙️ Protocols</label>
+                        <label for="VLConfigs">⚙️ 协议</label>
                         <div>
                             <div class="protocols inner-container">
                                 <div class="proto">
@@ -127,13 +127,13 @@
                         </div>
                     </div>
                     <div class="form-control">
-                        <label for="tls-ports">🔒 TLS Ports</label>
+                        <label for="tls-ports">🔒 TLS 端口</label>
                         <div>
                             <div id="tls-ports" class="rules inner-container"></div>
                         </div>
                     </div>
                     <div id="none-tls" class="form-control" style="display: none;">
-                        <label for="non-tls-ports">🔓 None TLS Ports</label>
+                        <label for="non-tls-ports">🔓 非 TLS 端口</label>
                         <div>
                             <div id="non-tls-ports" class="rules inner-container"></div>
                         </div>
@@ -146,7 +146,7 @@
                 </summary>
                 <div class="section">
                     <div class="form-control">
-                        <label for="fragmentLengthMin">📐 Length</label>
+                        <label for="fragmentLengthMin">📐 长度</label>
                         <div class="min-max">
                             <input type="number" id="fragmentLengthMin" name="fragmentLengthMin" min="10" required>
                             <span>-</span>
@@ -154,7 +154,7 @@
                         </div>
                     </div>
                     <div class="form-control">
-                        <label for="fragmentIntervalMin">🕞 Interval</label>
+                        <label for="fragmentIntervalMin">🕞 间隔</label>
                         <div class="min-max">
                             <input type="number" id="fragmentIntervalMin" name="fragmentIntervalMin" min="1" max="30"
                                 required>
@@ -164,7 +164,7 @@
                         </div>
                     </div>
                     <div class="form-control">
-                        <label for="fragmentPackets">📦 Packets</label>
+                        <label for="fragmentPackets">📦 包类型</label>
                         <div>
                             <select id="fragmentPackets" name="fragmentPackets">
                                 <option value="tlshello">tlshello</option>
@@ -179,21 +179,21 @@
             </details>
             <details>
                 <summary>
-                    <h3>Warp General</h3>
+                    <h3>Warp 常规设置</h3>
                 </summary>
                 <div class="section">
 
                     <div class="form-control">
-                        <label for="warpEndpoints">✨ Endpoints</label>
+                        <label for="warpEndpoints">✨ Endpoint 地址</label>
                         <div>
                             <textarea type="text" id="warpEndpoints" name="warpEndpoints" rows="1" required></textarea>
                         </div>
                     </div>
                     <div class="form-control">
-                        <label for="endpointScanner">🔎 Scan Endpoint</label>
+                        <label for="endpointScanner">🔎 扫描 Endpoint</label>
                         <div>
                             <button type="button" id="endpointScanner" class="button">
-                                Copy Script<span class="material-symbols-outlined">terminal</span>
+                                复制脚本<span class="material-symbols-outlined">terminal</span>
                             </button>
                         </div>
                     </div>
@@ -201,8 +201,8 @@
                         <label for="warpFakeDNS">🧢 Fake DNS</label>
                         <div>
                             <select id="warpFakeDNS" name="warpFakeDNS">
-                                <option value="true">Enabled</option>
-                                <option value="false">Disabled</option>
+                                <option value="true">启用</option>
+                                <option value="false">禁用</option>
                             </select>
                         </div>
                     </div>
@@ -210,21 +210,21 @@
                         <label for="warpEnableIPv6">🔛 IPv6</label>
                         <div>
                             <select id="warpEnableIPv6" name="warpEnableIPv6">
-                                <option value="true">Enabled</option>
-                                <option value="false">Disabled</option>
+                                <option value="true">启用</option>
+                                <option value="false">禁用</option>
                             </select>
                         </div>
                     </div>
                     <div class="form-control">
-                        <label for="refreshBtn">♻️ Warp Configs</label>
+                        <label for="refreshBtn">♻️ Warp 配置</label>
                         <div>
                             <button id="updateWarpConfigs" type="button" class="button">
-                                Update<span class="material-symbols-outlined">autorenew</span>
+                                更新<span class="material-symbols-outlined">autorenew</span>
                             </button>
                         </div>
                     </div>
                     <div class="form-control">
-                        <label for="bestWarpInterval">🔄 Best Interval</label>
+                        <label for="bestWarpInterval">🔄 测试最佳间隔</label>
                         <div>
                             <input type="number" id="bestWarpInterval" name="bestWarpInterval" min="10" max="90">
                         </div>
@@ -240,7 +240,7 @@
                         <div class="section">
                             <h3><span class="material-symbols-outlined">tune</span> MahsaNG - NikaNG - Hiddify</h3>
                             <div class="form-control">
-                                <label for="hiddifyNoiseMode">😵‍💫 Hiddify Mode</label>
+                                <label for="hiddifyNoiseMode">😵‍💫 Hiddify 模式</label>
                                 <div>
                                     <input type="text" id="hiddifyNoiseMode" name="hiddifyNoiseMode"
                                         pattern="^(m[1-6]|h_[0-9A-Fa-f]{2}|g_([0-9A-Fa-f]{2}_){2}[0-9A-Fa-f]{2})$"
@@ -249,7 +249,7 @@
                                 </div>
                             </div>
                             <div class="form-control">
-                                <label for="knockerNoiseMode">😵‍💫 NikaNG Mode</label>
+                                <label for="knockerNoiseMode">😵‍💫 NikaNG 模式</label>
                                 <div>
                                     <input type="text" id="knockerNoiseMode" name="knockerNoiseMode"
                                         pattern="^(none|quic|random|[0-9A-Fa-f]+)$"
@@ -258,7 +258,7 @@
                                 </div>
                             </div>
                             <div class="form-control">
-                                <label for="noiseCountMin">🎚️ Noise Count</label>
+                                <label for="noiseCountMin">🎚️ 噪音计数</label>
                                 <div class="min-max">
                                     <input type="number" id="noiseCountMin" name="noiseCountMin" min="1" required>
                                     <span>-</span>
@@ -266,7 +266,7 @@
                                 </div>
                             </div>
                             <div class="form-control">
-                                <label for="noiseSizeMin">📏 Noise Size</label>
+                                <label for="noiseSizeMin">📏 噪音大小</label>
                                 <div class="min-max">
                                     <input type="number" id="noiseSizeMin" name="noiseSizeMin" min="1" required>
                                     <span>-</span>
@@ -274,7 +274,7 @@
                                 </div>
                             </div>
                             <div class="form-control">
-                                <label for="noiseDelayMin">🕞 Noise Delay</label>
+                                <label for="noiseDelayMin">🕞 噪音延迟</label>
                                 <div class="min-max">
                                     <input type="number" id="noiseDelayMin" name="noiseDelayMin" min="1" required>
                                     <span>-</span>
@@ -287,14 +287,14 @@
                         <div class="section">
                             <h3><span class="material-symbols-outlined">tune</span> Clash - Amnezia</h3>
                             <div class="form-control">
-                                <label for="amneziaNoiseCount">🎚️ Noise Count</label>
+                                <label for="amneziaNoiseCount">🎚️ 噪音计数</label>
                                 <div>
                                     <input type="number" id="amneziaNoiseCount" name="amneziaNoiseCount" min="1"
                                         required>
                                 </div>
                             </div>
                             <div class="form-control">
-                                <label for="amneziaNoiseSizeMin">📏 Noise Size</label>
+                                <label for="amneziaNoiseSizeMin">📏 噪音大小</label>
                                 <div class="min-max">
                                     <input type="number" id="amneziaNoiseSizeMin" name="amneziaNoiseSizeMin" min="1"
                                         required>
@@ -318,68 +318,68 @@
             </details>
             <details>
                 <summary>
-                    <h3>Routing Rules</h3>
+                    <h3>路由规则</h3>
                 </summary>
                 <div class="section">
                     <div class="container">
-                        <h3><span class="material-symbols-outlined">tune</span> Preset Rules</h3>
+                        <h3><span class="material-symbols-outlined">tune</span> 预设规则</h3>
                         <div class="form-control">
-                            <label for="bypass-rules">🟩 Bypass rules</label>
+                            <label for="bypass-rules">🟩 绕过规则</label>
                             <div>
                                 <div id="bypass-rules" class="rules inner-container">
                                     <div class="routing">
                                         <input type="checkbox" id="bypassLAN" name="bypassLAN" value="true">
-                                        <label for="bypassLAN">Bypass LAN</label>
+                                        <label for="bypassLAN">绕过局域网</label>
                                     </div>
                                     <div class="routing">
                                         <input type="checkbox" id="bypassIran" name="bypassIran" value="true">
-                                        <label for="bypassIran">Bypass Iran</label>
+                                        <label for="bypassIran">绕过伊朗</label>
                                     </div>
                                     <div class="routing">
                                         <input type="checkbox" id="bypassChina" name="bypassChina" value="true">
-                                        <label for="bypassChina">Bypass China</label>
+                                        <label for="bypassChina">绕过中国</label>
                                     </div>
                                     <div class="routing">
                                         <input type="checkbox" id="bypassRussia" name="bypassRussia" value="true">
-                                        <label for="bypassRussia">Bypass Russia</label>
+                                        <label for="bypassRussia">绕过俄罗斯</label>
                                     </div>
                                     <div class="routing">
                                         <input type="checkbox" id="bypassOpenAi" name="bypassOpenAi" value="true">
-                                        <label for="bypassOpenAi">Bypass ChatGPT</label>
+                                        <label for="bypassOpenAi">绕过 ChatGPT</label>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="form-control">
-                            <label for="block-rules">🟥 Block rules</label>
+                            <label for="block-rules">🟥 阻止规则</label>
                             <div>
                                 <div id="block-rules" class="rules inner-container">
                                     <div class="routing">
                                         <input type="checkbox" id="blockAds" name="blockAds" value="true">
-                                        <label for="blockAds">Block Ads.</label>
+                                        <label for="blockAds">阻止广告</label>
                                     </div>
                                     <div class="routing">
                                         <input type="checkbox" id="blockPorn" name="blockPorn" value="true">
-                                        <label for="blockPorn">Block Porn</label>
+                                        <label for="blockPorn">阻止色情内容</label>
                                     </div>
                                     <div class="routing">
                                         <input type="checkbox" id="blockUDP443" name="blockUDP443" value="true">
-                                        <label for="blockUDP443">Block QUIC</label>
+                                        <label for="blockUDP443">阻止 QUIC</label>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="container">
-                        <h3><span class="material-symbols-outlined">tune</span> Custom Rules</h3>
+                        <h3><span class="material-symbols-outlined">tune</span> 自定义规则</h3>
                         <div class="form-control">
-                            <label for="customBypassRules">🟩 Bypass IPs / Domains</label>
+                            <label for="customBypassRules">🟩 绕过 IP / 域名</label>
                             <div>
                                 <textarea type="text" id="customBypassRules" name="customBypassRules"rows="1"></textarea>
                             </div>
                         </div>
                         <div class="form-control">
-                            <label for="customBlockRules">🟥 Block IPs / Domains</label>
+                            <label for="customBlockRules">🟥 阻止 IP / 域名</label>
                             <div>
                                 <textarea type="text" id="customBlockRules" name="customBlockRules" rows="1"></textarea>
                             </div>
@@ -388,25 +388,25 @@
                 </div>
             </details>
             <div id="apply" class="form-control apply">
-                <input type="submit" id="applyButton" class="button disabled" value="Apply Settings 💥"
+                <input type="submit" id="applyButton" class="button disabled" value="应用设置 💥"
                     form="configForm">
-                <button type="button" id="resetSettings" title="Reset panel settings to default">
+                <button type="button" id="resetSettings" title="将面板设置重置为默认值">
                     <i class="fa fa-refresh fa-2x" aria-hidden="true"></i>
                 </button>
             </div>
         </form>
     </div>
     <div class="form-container container">
-        <h2><span class="material-symbols-outlined">share</span> Subscriptions - Configs</h2>
+        <h2><span class="material-symbols-outlined">share</span> 订阅 - 配置</h2>
         <details class="details">
             <summary>
-                <h3>Normal</h3>
+                <h3>普通</h3>
             </summary>
             <div class="table-container">
                 <table id="normal-configs-table">
                     <tr>
-                        <th>Application</th>
-                        <th>Subscription</th>
+                        <th>应用</th>
+                        <th>订阅</th>
                     </tr>
                     <tr>
                         <td>
@@ -444,11 +444,11 @@
                             </div>
                         </td>
                         <td>
-                            <button onclick="openQR('normal', '', 'Normal', 'Normal Subscription')">
-                                QR Code&nbsp;<span class="material-symbols-outlined">qr_code</span>
+                            <button onclick="openQR('normal', '', '普通', '普通订阅')">
+                                二维码&nbsp;<span class="material-symbols-outlined">qr_code</span>
                             </button>
-                            <button class="copySubUrl" onclick="subURL('normal', '', 'Normal')">
-                                Copy Sub<span class="material-symbols-outlined">format_list_bulleted</span>
+                            <button class="copySubUrl" onclick="subURL('normal', '', '普通')">
+                                复制订阅链接<span class="material-symbols-outlined">format_list_bulleted</span>
                             </button>
                         </td>
                     </tr>
@@ -472,11 +472,11 @@
                             </div>
                         </td>
                         <td>
-                            <button onclick="openQR('normal', 'singbox', 'Normal', 'Normal Subscription', true)">
-                                QR Code&nbsp;<span class="material-symbols-outlined">qr_code</span>
+                            <button onclick="openQR('normal', 'singbox', '普通', '普通订阅', true)">
+                                二维码&nbsp;<span class="material-symbols-outlined">qr_code</span>
                             </button>
-                            <button onclick="subURL('normal', 'singbox', 'Normal')">
-                                Copy Sub<span class="material-symbols-outlined">format_list_bulleted</span>
+                            <button onclick="subURL('normal', 'singbox', '普通')">
+                                复制订阅链接<span class="material-symbols-outlined">format_list_bulleted</span>
                             </button>
                         </td>
                     </tr>
@@ -485,13 +485,13 @@
         </details>
         <details>
             <summary>
-                <h3>Full Normal</h3>
+                <h3>完整普通</h3>
             </summary>
             <div class="table-container">
                 <table id="full-normal-configs-table">
                     <tr>
-                        <th>Application</th>
-                        <th>Subscription</th>
+                        <th>应用</th>
+                        <th>订阅</th>
                     </tr>
                     <tr>
                         <td>
@@ -521,11 +521,11 @@
                             </div>
                         </td>
                         <td>
-                            <button onclick="openQR('full-normal', 'xray', 'Full-Normal', 'Full normal Subscription')">
-                                QR Code&nbsp;<span class="material-symbols-outlined">qr_code</span>
+                            <button onclick="openQR('full-normal', 'xray', '完整普通', '完整普通订阅')">
+                                二维码&nbsp;<span class="material-symbols-outlined">qr_code</span>
                             </button>
-                            <button onclick="subURL('full-normal', 'xray', 'Full-Normal')">
-                                Copy Sub<span class="material-symbols-outlined">format_list_bulleted</span>
+                            <button onclick="subURL('full-normal', 'xray', '完整普通')">
+                                复制订阅链接<span class="material-symbols-outlined">format_list_bulleted</span>
                             </button>
                         </td>
                     </tr>
@@ -542,14 +542,14 @@
                         </td>
                         <td>
                             <button
-                                onclick="openQR('full-normal', 'sfa', 'Full-Normal', 'Full normal Subscription', true)">
-                                QR Code&nbsp;<span class="material-symbols-outlined">qr_code</span>
+                                onclick="openQR('full-normal', 'sfa', '完整普通', '完整普通订阅', true)">
+                                二维码&nbsp;<span class="material-symbols-outlined">qr_code</span>
                             </button>
-                            <button onclick="subURL('full-normal', 'sfa', 'Full-Normal')">
-                                Copy Sub<span class="material-symbols-outlined">format_list_bulleted</span>
+                            <button onclick="subURL('full-normal', 'sfa', '完整普通')">
+                                复制订阅链接<span class="material-symbols-outlined">format_list_bulleted</span>
                             </button>
                             <button onclick="dlURL('full-normal', 'sfa')">
-                                Get config<span class="material-symbols-outlined">download</span>
+                                获取配置<span class="material-symbols-outlined">download</span>
                             </button>
                         </td>
                     </tr>
@@ -577,14 +577,14 @@
                             </div>
                         </td>
                         <td>
-                            <button onclick="openQR('full-normal', 'clash', 'Full-Normal', 'Full normal Subscription')">
-                                QR Code&nbsp;<span class="material-symbols-outlined">qr_code</span>
+                            <button onclick="openQR('full-normal', 'clash', '完整普通', '完整普通订阅')">
+                                二维码&nbsp;<span class="material-symbols-outlined">qr_code</span>
                             </button>
-                            <button onclick="subURL('full-normal', 'clash', 'Full-Normal')">
-                                Copy Sub<span class="material-symbols-outlined">format_list_bulleted</span>
+                            <button onclick="subURL('full-normal', 'clash', '完整普通')">
+                                复制订阅链接<span class="material-symbols-outlined">format_list_bulleted</span>
                             </button>
                             <button onclick="dlURL('full-normal', 'clash')">
-                                Get config<span class="material-symbols-outlined">download</span>
+                                获取配置<span class="material-symbols-outlined">download</span>
                             </button>
                         </td>
                     </tr>
@@ -598,8 +598,8 @@
             <div class="table-container">
                 <table id="frag-sub-table">
                     <thead>
-                        <th>Application</th>
-                        <th>Subscription</th>
+                        <th>应用</th>
+                        <th>订阅</th>
                     </thead>
                     <tr>
                         <td>
@@ -629,11 +629,11 @@
                             </div>
                         </td>
                         <td>
-                            <button onclick="openQR('fragment', '', 'Fragment', 'Fragment Subscription')">
-                                QR Code&nbsp;<span class="material-symbols-outlined">qr_code</span>
+                            <button onclick="openQR('fragment', '', 'Fragment', 'Fragment 订阅')">
+                                二维码&nbsp;<span class="material-symbols-outlined">qr_code</span>
                             </button>
                             <button onclick="subURL('fragment', '', 'Fragment')">
-                                Copy Sub<span class="material-symbols-outlined">format_list_bulleted</span>
+                                复制订阅链接<span class="material-symbols-outlined">format_list_bulleted</span>
                             </button>
                         </td>
                     </tr>
@@ -646,11 +646,11 @@
                         </td>
                         <td>
                             <button
-                                onclick="openQR('fragment', 'hiddify-frag', 'Fragment', 'Fragment Subscription', false, true)">
-                                QR Code&nbsp;<span class="material-symbols-outlined">qr_code</span>
+                                onclick="openQR('fragment', 'hiddify-frag', 'Fragment', 'Fragment 订阅', false, true)">
+                                二维码&nbsp;<span class="material-symbols-outlined">qr_code</span>
                             </button>
                             <button onclick="subURL('fragment', 'hiddify-frag', 'Fragment', true)">
-                                Copy Sub<span class="material-symbols-outlined">format_list_bulleted</span>
+                                复制订阅链接<span class="material-symbols-outlined">format_list_bulleted</span>
                             </button>
                         </td>
                     </tr>
@@ -664,8 +664,8 @@
             <div class="table-container">
                 <table id="warp-configs-table">
                     <tr>
-                        <th>Application</th>
-                        <th>Subscription</th>
+                        <th>应用</th>
+                        <th>订阅</th>
                     </tr>
                     <tr>
                         <td>
@@ -683,11 +683,11 @@
                             </div>
                         </td>
                         <td>
-                            <button onclick="openQR('warp', 'xray', 'Warp', 'Warp Subscription')">
-                                QR Code&nbsp;<span class="material-symbols-outlined">qr_code</span>
+                            <button onclick="openQR('warp', 'xray', 'Warp', 'Warp 订阅')">
+                                二维码&nbsp;<span class="material-symbols-outlined">qr_code</span>
                             </button>
                             <button onclick="subURL('warp', 'xray', 'Warp')">
-                                Copy Sub<span class="material-symbols-outlined">format_list_bulleted</span>
+                                复制订阅链接<span class="material-symbols-outlined">format_list_bulleted</span>
                             </button>
                         </td>
                     </tr>
@@ -703,14 +703,14 @@
                             </div>
                         </td>
                         <td>
-                            <button onclick="openQR('warp', 'singbox', 'Warp', 'Warp Subscription', true)">
-                                QR Code&nbsp;<span class="material-symbols-outlined">qr_code</span>
+                            <button onclick="openQR('warp', 'singbox', 'Warp', 'Warp 订阅', true)">
+                                二维码&nbsp;<span class="material-symbols-outlined">qr_code</span>
                             </button>
                             <button onclick="subURL('warp', 'singbox', 'Warp')">
-                                Copy Sub<span class="material-symbols-outlined">format_list_bulleted</span>
+                                复制订阅链接<span class="material-symbols-outlined">format_list_bulleted</span>
                             </button>
                             <button onclick="dlURL('warp', 'singbox')">
-                                Get config<span class="material-symbols-outlined">download</span>
+                                获取配置<span class="material-symbols-outlined">download</span>
                             </button>
                         </td>
                     </tr>
@@ -722,11 +722,11 @@
                             </div>
                         </td>
                         <td>
-                            <button onclick="openQR('warp', 'hiddify', 'Warp', 'Warp Subscription', false, true)">
-                                QR Code&nbsp;<span class="material-symbols-outlined">qr_code</span>
+                            <button onclick="openQR('warp', 'hiddify', 'Warp', 'Warp 订阅', false, true)">
+                                二维码&nbsp;<span class="material-symbols-outlined">qr_code</span>
                             </button>
                             <button onclick="subURL('warp', 'hiddify', 'Warp', true)">
-                                Copy Sub<span class="material-symbols-outlined">format_list_bulleted</span>
+                                复制订阅链接<span class="material-symbols-outlined">format_list_bulleted</span>
                             </button>
                         </td>
                     </tr>
@@ -754,14 +754,14 @@
                             </div>
                         </td>
                         <td>
-                            <button onclick="openQR('warp', 'clash', 'Warp', 'Warp Subscription')">
-                                QR Code&nbsp;<span class="material-symbols-outlined">qr_code</span>
+                            <button onclick="openQR('warp', 'clash', 'Warp', 'Warp 订阅')">
+                                二维码&nbsp;<span class="material-symbols-outlined">qr_code</span>
                             </button>
                             <button onclick="subURL('warp', 'clash', 'Warp')">
-                                Copy Sub<span class="material-symbols-outlined">format_list_bulleted</span>
+                                复制订阅链接<span class="material-symbols-outlined">format_list_bulleted</span>
                             </button>
                             <button onclick="dlURL('warp', 'clash')">
-                                Get config<span class="material-symbols-outlined">download</span>
+                                获取配置<span class="material-symbols-outlined">download</span>
                             </button>
                         </td>
                     </tr>
@@ -774,7 +774,7 @@
                         </td>
                         <td>
                             <button id="dlConfigsBtn" type="button">
-                                Download<span class="material-symbols-outlined">download</span>
+                                下载<span class="material-symbols-outlined">download</span>
                             </button>
                         </td>
                     </tr>
@@ -788,8 +788,8 @@
             <div class="table-container">
                 <table id="warp-pro-configs-table">
                     <tr>
-                        <th>Application</th>
-                        <th>Subscription</th>
+                        <th>应用</th>
+                        <th>订阅</th>
                     </tr>
                     <tr>
                         <td>
@@ -807,11 +807,11 @@
                             </div>
                         </td>
                         <td>
-                            <button onclick="openQR('warp-pro', 'xray-pro', 'Warp-Pro', 'Warp Pro Subscription')">
-                                QR Code&nbsp;<span class="material-symbols-outlined">qr_code</span>
+                            <button onclick="openQR('warp-pro', 'xray-pro', 'Warp-Pro', 'Warp PRO 订阅')">
+                                二维码&nbsp;<span class="material-symbols-outlined">qr_code</span>
                             </button>
                             <button onclick="subURL('warp-pro', 'xray-pro', 'Warp-Pro')">
-                                Copy Sub<span class="material-symbols-outlined">format_list_bulleted</span>
+                                复制订阅链接<span class="material-symbols-outlined">format_list_bulleted</span>
                             </button>
                         </td>
                     </tr>
@@ -831,11 +831,11 @@
                             </div>
                         </td>
                         <td>
-                            <button onclick="openQR('warp-pro', 'xray-knocker', 'Warp-Pro', 'Warp Pro Subscription')">
-                                QR Code&nbsp;<span class="material-symbols-outlined">qr_code</span>
+                            <button onclick="openQR('warp-pro', 'xray-knocker', 'Warp-Pro', 'Warp PRO 订阅')">
+                                二维码&nbsp;<span class="material-symbols-outlined">qr_code</span>
                             </button>
                             <button onclick="subURL('warp-pro', 'xray-knocker', 'Warp-Pro')">
-                                Copy Sub<span class="material-symbols-outlined">format_list_bulleted</span>
+                                复制订阅链接<span class="material-symbols-outlined">format_list_bulleted</span>
                             </button>
                         </td>
                     </tr>
@@ -863,14 +863,14 @@
                             </div>
                         </td>
                         <td>
-                            <button onclick="openQR('warp-pro', 'clash-pro', 'Warp-Pro', 'Warp Pro Subscription')">
-                                QR Code&nbsp;<span class="material-symbols-outlined">qr_code</span>
+                            <button onclick="openQR('warp-pro', 'clash-pro', 'Warp-Pro', 'Warp PRO 订阅')">
+                                二维码&nbsp;<span class="material-symbols-outlined">qr_code</span>
                             </button>
                             <button onclick="subURL('warp-pro', 'clash-pro', 'Warp-Pro')">
-                                Copy Sub<span class="material-symbols-outlined">format_list_bulleted</span>
+                                复制订阅链接<span class="material-symbols-outlined">format_list_bulleted</span>
                             </button>
                             <button onclick="dlURL('warp-pro', 'clash-pro')">
-                                Get config<span class="material-symbols-outlined">download</span>
+                                获取配置<span class="material-symbols-outlined">download</span>
                             </button>
                         </td>
                     </tr>
@@ -883,11 +883,11 @@
                         </td>
                         <td>
                             <button
-                                onclick="openQR('warp-pro', 'hiddify-pro', 'Warp-Pro', 'Warp Pro Subscription', false, true)">
-                                QR Code&nbsp;<span class="material-symbols-outlined">qr_code</span>
+                                onclick="openQR('warp-pro', 'hiddify-pro', 'Warp-Pro', 'Warp PRO 订阅', false, true)">
+                                二维码&nbsp;<span class="material-symbols-outlined">qr_code</span>
                             </button>
                             <button onclick="subURL('warp-pro', 'hiddify-pro', 'Warp-Pro', true)">
-                                Copy Sub<span class="material-symbols-outlined">format_list_bulleted</span>
+                                复制订阅链接<span class="material-symbols-outlined">format_list_bulleted</span>
                             </button>
                         </td>
                     </tr>
@@ -904,7 +904,7 @@
                         </td>
                         <td>
                             <button id="dlAmneziaConfigsBtn" type="button">
-                                Download<span class="material-symbols-outlined">download</span>
+                                下载<span class="material-symbols-outlined">download</span>
                             </button>
                         </td>
                     </tr>
@@ -917,10 +917,10 @@
             <div class="modal-content">
                 <span class="close" id="closeResetPass">&times;</span>
                 <form id="passwordChangeForm">
-                    <h2>Change Password</h2>
+                    <h2>更改密码</h2>
                     <div class="section">
                         <div class="form-control">
-                            <label for="newPassword">New Password</label>
+                            <label for="newPassword">新密码</label>
                             <div class="password-wrapper">
                                 <input type="password" id="newPassword" name="newPassword" required>
                                 <span class="material-symbols-outlined toggle-password">
@@ -929,7 +929,7 @@
                             </div>
                         </div>
                         <div class="form-control">
-                            <label for="confirmPassword">Confirm Password</label>
+                            <label for="confirmPassword">确认密码</label>
                             <div class="password-wrapper">
                                 <input type="password" id="confirmPassword" name="confirmPassword" required>
                                 <span class="material-symbols-outlined toggle-password">
@@ -939,7 +939,7 @@
                         </div>
                     </div>
                     <div id="passwordError" class="password-error"></div>
-                    <button id="changePasswordBtn" type="submit" class="button">Change Password</button>
+                    <button id="changePasswordBtn" type="submit" class="button">更改密码</button>
                 </form>
             </div>
         </div>
@@ -953,17 +953,17 @@
             </div>
         </div>
         <div class="header-container">
-            <h2><span class="material-symbols-outlined">fingerprint</span> My IP</h2>
-            <button type="button" id="refresh-geo-location" class="refresh-geo-location">
+            <h2><span class="material-symbols-outlined">fingerprint</span> 我的 IP</h2>
+            <button type="button" id="refresh-geo-location" class="refresh-geo-location" title="刷新地理位置信息">
                 <i class="fa fa-refresh fa-2x refresh-my-ip" aria-hidden="true"></i>
             </button>
         </div>
         <div class="my-ip">
             <table id="ips" class="my-ip">
                 <thead>
-                    <th>Information</th>
-                    <th>Cloudflare targets</th>
-                    <th>Other targets</th>
+                    <th>信息</th>
+                    <th>Cloudflare 节点</th>
+                    <th>其他节点</th>
                 </thead>
                 <tbody>
                     <tr>
@@ -972,12 +972,12 @@
                         <td id="ip"></td>
                     </tr>
                     <tr>
-                        <td>Country</td>
+                        <td>国家</td>
                         <td id="cf-country"></td>
                         <td id="country"></td>
                     </tr>
                     <tr>
-                        <td>City</td>
+                        <td>城市</td>
                         <td id="cf-city"></td>
                         <td id="city"></td>
                     </tr>
@@ -997,9 +997,9 @@
                 <a class="link" id="github-link" href="https://github.com/bia-pain-bache/BPB-Worker-Panel"
                     target="_blank">Github</a>
             </div>
-            <button id="openResetPass" class="button">Change Password <span
+            <button id="openResetPass" class="button">更改密码 <span
                     class="material-symbols-outlined">key_vertical</span></button>
-            <button type="button" id="logout" class="logout" title="Log out">
+            <button type="button" id="logout" class="logout" title="退出登录">
                 <i class="fa fa-power-off fa-2x" aria-hidden="true"></i>
             </button>
         </div>
