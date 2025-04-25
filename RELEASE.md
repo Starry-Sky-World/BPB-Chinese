@@ -1,3 +1,8 @@
+本次更新让BPB支持了中文（初始化页面未支持），同时，你也可以打开中文文档来看部署教程了！
+
+
+保留以下版本数据
+```markdown
 # 🥳 A new generation of BPB Panel
 
 > [!CAUTION]
@@ -28,3 +33,4 @@
 
 
 ### 💡 Full Changelog [ from v3.1.3 to v3.2.3](https://github.com/bia-pain-bache/bpb-worker-panel/compare/v3.1.3...v3.2.3)
+```
