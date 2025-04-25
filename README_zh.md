@@ -14,7 +14,7 @@
 <br>
 
 🌟 如果你觉得 **BPB Panel** 有价值，你的捐赠意义重大 🌟
-- **USDT (BEP20):** `0x111EFF917E7cf4b0BfC99Edffd8F1AbC2b23d158`
+- **USDT (BEP20):** `0x111EFF917E7cf4b0BfC99Edffd8F1AbC2b23d158`（不是@Starry-Sky-World的，是原作者的）
 
 ## 功能
 
@@ -36,13 +36,13 @@
 2.  **请求限制**: 每个 Worker 每天支持 10 万次 VLESS 和 Trojan 请求，因此只够 2-3 个用户使用。你可以使用个人自定义域名来绕过 VLESS/Trojan 或 Warp 配置上的限制，这些是无限量的。
 
 ## 如何使用:
-- [安装 (Pages - 新推荐方法)](docs/pages_upload_installation_fa.md)
+- [安装 (Pages - 新推荐方法)](docs/pages_upload_installation_zh.md)
 
-- [安装 (Worker)](docs/worker_installation_fa.md)
+- [安装 (Worker)](docs/worker_installation_zh.md)
 
-- [如何使用](docs/configuration_fa.md)
+- [如何使用](docs/configuration_zh.md)
 
-- [常见问题 (FAQ)](docs/faq.md)
+- [常见问题 (FAQ)](docs/faq_zh.md)
 <br>
 
 ## 支持的客户端
