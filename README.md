@@ -76,7 +76,7 @@ This project is aimed to provide a user panel to access FREE and SECURE `VLESS`,
 ---
 
 ## Stargazers Over Time
-[![Stargazers Over Time](https://starchart.cc/bia-pain-bache/BPB-Worker-Panel.svg?variant=adaptive)](https://starchart.cc/bia-pain-bache/BPB-Worker-Panel)
+[![Stargazers Over Time](https://starchart.cc/Starry-Sky-World/BPB-Chinese.svg?variant=adaptive)](https://starchart.cc/Starry-Sky-World/BPB-Chinese)
 
 ---
 
