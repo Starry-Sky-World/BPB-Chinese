@@ -19,10 +19,11 @@ body {
 
 body {
     font-family: system-ui;
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
     position: relative;
     overflow: hidden;
     text-align: center;
+    background: url('https://api.rls.ovh/adaptive');
 }
 
 body.dark-mode {
@@ -36,6 +37,7 @@ body.dark-mode {
     --border-color: #353535;
     --input-background-color: #252525;
     --header-shadow: 2px 2px 4px rgba(255, 255, 255, 0.25);
+    background: url('https://api.rls.ovh/adaptive');
 }
 
 .container {

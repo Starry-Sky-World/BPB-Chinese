@@ -1,3 +1,70 @@
+# BPB-Chinese
+
+这是 BPB Panel 的中文文档仓库。本仓库包含了完整的中文安装教程和使用说明。
+
+## 文档目录
+
+- [向导安装教程](docs/wizard_installation_zh.md) - 推荐使用此方法安装
+- [Worker 安装教程](docs/worker_installation_zh.md) - 通过 Cloudflare Workers 安装
+- [Pages 上传安装教程](docs/pages_upload_installation_zh.md) - 通过 Cloudflare Pages 安装
+- [配置和使用说明](docs/configuration_zh.md) - 详细的配置教程和使用说明
+- [常见问题解答](docs/faq_zh.md) - 常见问题和解决方案
+
+## 安装方法
+
+我们提供了三种安装方式：
+
+### 1. 向导安装（推荐）
+
+使用 BPB Wizard 进行安装是最简单的方法。该方法支持 Workers 和 Pages 两种部署方式，并且会自动完成所有必要的配置。
+
+[查看向导安装教程](docs/wizard_installation_zh.md)
+
+### 2. Worker 安装
+
+如果您希望通过 Cloudflare Workers 手动安装，可以参考此教程。
+
+[查看 Worker 安装教程](docs/worker_installation_zh.md)
+
+### 3. Pages 上传安装
+
+通过 Cloudflare Pages 安装的方法，适合需要更大请求配额的用户。
+
+[查看 Pages 上传安装教程](docs/pages_upload_installation_zh.md)
+
+## 配置说明
+
+安装完成后，您可以参考配置说明来了解：
+
+- Normal 订阅设置
+- Full Normal 订阅设置
+- Fragment 订阅设置
+- Warp 订阅设置
+- Warp PRO 订阅设置
+- IP 表格说明
+- 高级设置（包括 VLESS/TROJAN、DNS、Proxy IP、链式代理等）
+- 路由规则设置
+
+[查看完整配置说明](docs/configuration_zh.md)
+
+## 常见问题
+
+如果您在使用过程中遇到问题，请先查看常见问题解答：
+
+[查看常见问题解答](docs/faq_zh.md)
+
+## 注意事项
+
+1. 请确保您的 Cloudflare 账号已完成邮箱验证。
+2. 建议使用可靠的邮箱服务（如 Gmail）注册 Cloudflare 账号。
+3. 在使用 Worker 方式时，每天有 100,000 请求的限制（除非绑定了自定义域名）。
+4. Pages 方式没有请求限制，但可能会收到超出限制的提醒邮件（不影响使用）。
+5. 配置更新时请注意备份您的设置。
+
+## 文档更新
+
+本文档会随着项目的更新而更新，请定期检查是否有新的更新。如果您发现任何问题或有改进建议，欢迎提出。
+
 <h1 align="center">BPB Panel 💦</h1>
 
 ### 🌏 Readme in [Farsi](README_fa.md)

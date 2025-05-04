@@ -28,7 +28,7 @@ body {
     color: var(--color);
     text-align: center;
     /* 添加用户要求的背景 */
-    background: url('https://api.rls.ovh/vertical');
+    background: url('https://api.rls.ovh/adaptive');
     background-size: cover; /* 可选：覆盖整个屏幕 */
     background-position: center; /* 可选：居中背景图 */
     background-repeat: no-repeat; /* 可选：不重复背景图 */
@@ -56,6 +56,7 @@ body.dark-mode {
     --input-background-color: #252525;
     --header-shadow: 2px 2px 4px rgba(255, 255, 255, 0.25);
     --container-box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    background: url('https://api.rls.ovh/adaptive');
 }
 
 h1 {

@@ -14,7 +14,7 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
 
         const { success, status, message } = await response.json();
         if (!success) {
-            passwordError.textContent = '⚠️ Wrong Password!';
+            passwordError.textContent = '⚠️ 密码错误!';
             throw new Error(`Login failed with status ${status}: ${message}`);
         }
 
