@@ -27,6 +27,12 @@ body {
     background-color: var(--background-color);
     color: var(--color);
     text-align: center;
+    /* 添加用户要求的背景 */
+    background: url('https://api.rls.ovh/vertical');
+    background-size: cover; /* 可选：覆盖整个屏幕 */
+    background-position: center; /* 可选：居中背景图 */
+    background-repeat: no-repeat; /* 可选：不重复背景图 */
+    background-attachment: fixed; /* 可选：固定背景图位置，不随滚动条移动 */
 }
 
 *,
